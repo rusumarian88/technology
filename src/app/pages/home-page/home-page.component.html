@@ -1,0 +1,85 @@
+
+<div class="heder">
+    <app-nav-bar class="nav-bar"></app-nav-bar>
+    <div class="content-heder">
+        <div class="title">Bilgi Teknolojilerinde 23 Yıllık Tecrübe</div>
+        <div class="description">Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</div>
+        <div class="input">
+            <input class="email" type="email" placeholder="Mail bültenimize kayıt ol">
+            <div class="button">Kayıt Ol</div>
+        </div>
+    </div>
+</div>
+<div class="section-a">
+    <div class="title-sec-a">Kalite ve Süreç Yönetimi</div>
+    <div class="description-sec-a">Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</div>
+    <div class="cards">
+        <app-card class="card" *ngFor="let p of processesServices.processes" [icon]="p.icon" [circle]="p.circle" [title]="p.title" [description]="p.description"></app-card>
+    </div>
+</div>
+<div class="section-b">
+    <div class="background-image"></div>
+    <div class="content-sec-b">
+        <div class="title-sec-b">Test Yönetimiyle Neler Sağlıyoruz?</div>
+        <div class="description-sec-b">IoT Destekli Çözümler</div>
+        <div class="texts">
+            <div class="text-sec-b">Yazılım Kalitesini<br/> Arttırıyoruz</div>
+            <img class="icon-sec-b" src="/assets/icon-sec-b.png">
+            <div class="text-sec-b">Olası Hataları Önceden<br/> Belirliyoruz</div>
+            <img class="icon-sec-b" src="/assets/icon-sec-b.png">
+            <div class="text-sec-b">Oluşabilecek Riskleri<br/> Önlüyoruz</div>
+            <img class="icon-sec-b" src="/assets/icon-sec-b.png">
+            <div class="text-sec-b">Zaman ve Maliyetten<br/> Tasarruf Sağlıyoruz</div>
+        </div>
+    </div>
+</div>
+<div class="section-c">
+    <app-text-with-photo title="Kalite ve Süreç Yönetimi" description="Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini şirketinizde uygulamak ve geliştirmek için yanınızdayız." button="Keşfet" photo="/assets/photo1.jpg"></app-text-with-photo>
+    <app-text-with-photo [rowReverse]="true" title="Test Yönetimi ve Analizi" description="Danışmanlığını yürüttüğümüz projelerde yazılım hatalarını önlemek amacıyla gerçekleştirdiğimiz testleri her proje aşamasında manuel ya da test otomasyonu ile dikkatle uygulamaktayız. Deneyimli test ekibimiz, kurumlara yüksek kalitede yazılım testleri hizmeti ile baştan sona güvenli, kaliteli ve tatmin edici bir müşteri deneyimi sunmaktadır." button="Keşfet" photo="/assets/photo2.jpg"></app-text-with-photo>  
+</div>
+<div class="section-d">
+    <div class="content-sec-d">
+        <div class="title-sec-d">Referanslarımız</div>
+        <div class="description-sec-d">Bize güvenen ve beraber çalıştığımız iş ortaklarımız</div>
+        <div class="logos">
+            <div class="column a">
+                <div class="background"><img class="logo" src="/assets/logo1.png"></div>
+            </div>
+            <div class="column b">
+                <div class="background"><img class="logo" src="/assets/logo2.png"></div>
+                <div class="background"><img class="logo" src="/assets/logo3.png"></div>
+            </div>
+            <div class="column c">
+                <div class="background"><img class="logo" src="/assets/logo4.png"></div>
+                <div class="background"><img class="logo" src="/assets/logo5.png"></div>
+                <div class="background"><img class="logo" src="/assets/logo6.png"></div>
+            </div>
+            <div class="column d">
+                <div class="background"><img class="logo" src="/assets/logo7.png"></div>
+                <div class="background"><img class="logo" src="/assets/logo8.png"></div>
+            </div>
+            <div class="column e">
+                <div class="background"><img class="logo" src="/assets/logo9.png"></div>
+            </div>
+        </div>
+        <div class="logos-small">
+            <div class="background"><img class="logo" src="/assets/logo1.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo2.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo3.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo4.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo5.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo6.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo7.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo8.png"></div>
+            <div class="background"><img class="logo" src="/assets/logo9.png"></div>
+        </div>
+    </div>
+</div>
+
+<div class="section-e">
+    <div class="icon-sec-e"><div class="circle"></div></div>
+    <div class="title-sec-e">Bize Ulaşın</div>
+    <div class="description-sec-e">Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.</div>
+    <div class="button-sec-e">Bize Ulaşın</div>
+</div>
+<app-footer></app-footer>

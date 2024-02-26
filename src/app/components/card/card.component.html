@@ -1,0 +1,7 @@
+<div class="card">
+    <div *ngFor="let p of icon" class="icon" [ngStyle]="{'background-image':'url('+p+')'}">
+        <img class="circle" [src]="circle">
+    </div>
+    <div class="title">{{title}}</div>
+    <div class="description">{{description}}</div>
+</div>

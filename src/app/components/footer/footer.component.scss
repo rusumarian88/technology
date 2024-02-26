@@ -1,0 +1,83 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.footer{
+    padding: 80px 0 70px;
+    background-color: rgba(248, 70, 74, 1);
+    font-family: 'Inter',sans-serif;
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:left;
+    gap: 50px;
+    @include latime;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: stretch;
+    gap:100px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: left;
+    gap:24px;
+}
+
+.title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.item{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgba(230, 230, 230, 1);
+}
+
+.below-columns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 62px;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    gap:16px;
+}
+
+.icon{
+    height:32px;
+}

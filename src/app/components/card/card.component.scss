@@ -1,0 +1,50 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: inline-block;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 316px;
+}
+
+.icon{
+    position: relative;
+    width: 76px;
+    height: 76px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.title{
+    @include title-small;
+    margin: 10px 0;
+}
+
+
+.description{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+}

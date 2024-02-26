@@ -1,0 +1,28 @@
+@mixin latime(){
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@mixin font-small-gray{
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+}
+
+@mixin title-mdium-extrabold{
+    font-size:var(--title-medium-extrabold);
+    line-height: 64px;
+    font-weight: 800;
+}
+
+@mixin title-small{
+    font-size: var(--title-small-font-size);
+    line-height: 32px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+}

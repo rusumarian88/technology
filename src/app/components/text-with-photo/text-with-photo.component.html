@@ -1,0 +1,9 @@
+<div [ngClass]="{reverse:rowReverse}" class="content">
+    <div class="left">
+        <div class="title">{{title}}</div>
+        <div class="description">{{description}}</div>
+        <div class="button">{{button}}</div>
+    </div>
+    <div [ngStyle]="{'background-image':'url('+photo+')'}" class="right"></div>
+    <!-- <div *ngFor="let p of photos" class="photo" [ngStyle]="{'background-image':'url('+p+')'}"></div> -->
+</div>
